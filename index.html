@@ -442,7 +442,7 @@
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             // tampilkan alert
-            alert("Terimakasih! Pesan anda sudah saya terima");
+            swal("Terimakasih!", "Pesan anda sudah saya terima", "success");
             // reset form
             form.reset();
             console.log("Success!", response);
@@ -450,5 +450,7 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
