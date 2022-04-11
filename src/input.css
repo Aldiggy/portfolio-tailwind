@@ -6,6 +6,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.btn-hub {
+  background: linear-gradient(to right, #cc3300 0%, #ff9900 100%);
+}
+
 .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
