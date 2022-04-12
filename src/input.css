@@ -6,6 +6,26 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#home {
+  background-color: #06113c;
+}
+
+#portfolio {
+  background-color: #ff8c32;
+}
+
+#blog {
+  background-color: #dddddd;
+}
+
+footer {
+  background-color: #eeeeee;
+}
+
+.btn {
+  background-color: #a0afb7;
+}
+
 .btn-hub {
   background: linear-gradient(to right, #cc3300 0%, #ff9900 100%);
 }
