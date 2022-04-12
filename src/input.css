@@ -6,6 +6,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.gradient {
+  background: linear-gradient(to right, #cc3300 0%, #ff9900 100%);
+  color: transparent;
+  background-clip: text;
+}
+
 #home {
   background-color: #06113c;
 }
