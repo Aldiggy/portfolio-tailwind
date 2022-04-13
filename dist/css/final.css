@@ -673,10 +673,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3.5rem;
 }
 
-.h-4\/5 {
-  height: 80%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -695,14 +691,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-\[250px\] {
@@ -845,11 +833,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
 }
 
-.border-dark {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
-}
-
 .border-x-red-400 {
   --tw-border-opacity: 1;
   border-left-color: rgb(248 113 113 / var(--tw-border-opacity));
@@ -919,6 +902,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-4 {
@@ -992,6 +979,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-center {
