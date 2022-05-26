@@ -569,6 +569,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1163,7 +1173,7 @@ ul li a::before {
   bottom: -10px;
   pointer-events: none;
   z-index: 1;
-  font-size: 0.7em;
+  font-size: 0.4em;
   color: #3bffe8;
   font-weight: 500;
   letter-spacing: 100px;
