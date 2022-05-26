@@ -24,12 +24,12 @@ ul li a::before {
   pointer-events: none;
   z-index: 1;
   font-size: 0.7em;
-  color: #3bffe8;
+  color: #00adb5;
   font-weight: 500;
   letter-spacing: 100px;
   opacity: 0;
   transition: 0.5s;
-  text-shadow: 0 0 10px #3bffe8, 0 0 30px #3bffe8, 0 0 80px #3bffe8;
+  text-shadow: 0 0 10px #00adb5, 0 0 30px #00adb5, 0 0 80px #00adb5;
 }
 
 ul li a:hover::before {
