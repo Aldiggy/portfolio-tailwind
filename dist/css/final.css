@@ -554,9 +554,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 9999;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mx-auto {
@@ -567,16 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mt-3 {
@@ -1162,7 +1152,6 @@ ul li a {
 }
 
 ul li a:hover {
-  color: rgba(255, 255, 255, 0.1);
   transform: translateY(-10px);
   transition-delay: 0s;
 }
@@ -1319,14 +1308,14 @@ footer {
   background-color: rgb(0 173 181 / var(--tw-bg-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-slate-600:hover {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-portfolio:hover {
@@ -1434,6 +1423,11 @@ footer {
 .dark .dark\:shadow-slate-500 {
   --tw-shadow-color: #64748b;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:hover\:text-slate-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:text-portfolio:hover {
@@ -1560,6 +1554,10 @@ footer {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:uppercase {
+    text-transform: uppercase;
   }
 
   .lg\:text-white {
