@@ -878,6 +878,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: currentColor;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1147,34 +1151,64 @@ body {
 }
 
 ul li a {
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-
-ul li a:hover {
-  transform: translateY(-10px);
-  transition-delay: 0s;
+  position: relative;
+  transition: 0.8s all linear;
 }
 
 ul li a::before {
-  content: attr(data-text);
   position: absolute;
-  bottom: -10px;
-  pointer-events: none;
-  z-index: 1;
-  font-size: 0.4em;
-  color: #3bffe8;
-  font-weight: 500;
-  letter-spacing: 100px;
-  opacity: 0;
-  transition: 0.5s;
-  text-shadow: 0 0 10px #3bffe8, 0 0 30px #3bffe8, 0 0 80px #3bffe8;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #00adb5;
+  z-index: -1;
 }
 
 ul li a:hover::before {
-  letter-spacing: 6px;
-  opacity: 1;
-  transition-delay: 0.25s;
+  -webkit-animation: ani 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation: ani 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    width: 0%;
+    height: 1px;
+    left: 50%;
+  }
+
+  50% {
+    width: 100%;
+    height: 1px;
+    left: 0;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+}
+
+@keyframes ani {
+  0% {
+    width: 0%;
+    height: 1px;
+    left: 50%;
+  }
+
+  50% {
+    width: 100%;
+    height: 1px;
+    left: 0;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
 }
 
 .gradient {
@@ -1308,6 +1342,11 @@ footer {
   background-color: rgb(0 173 181 / var(--tw-bg-opacity));
 }
 
+.hover\:text-slate-50:hover {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
 .hover\:text-slate-600:hover {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
@@ -1326,6 +1365,11 @@ footer {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(255 196 81 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-80:hover {
@@ -1438,6 +1482,11 @@ footer {
 .dark .dark\:hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(255 196 81 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-slate-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1556,10 +1605,6 @@ footer {
     line-height: 1.75rem;
   }
 
-  .lg\:uppercase {
-    text-transform: uppercase;
-  }
-
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1571,8 +1616,18 @@ footer {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .lg\:hover\:text-slate-900:hover {
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
+  }
+
   .dark .lg\:dark\:bg-transparent {
     background-color: transparent;
+  }
+
+  .dark .lg\:dark\:hover\:text-slate-900:hover {
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
   }
 }
 
