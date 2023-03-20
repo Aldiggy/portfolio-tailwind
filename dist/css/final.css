@@ -554,10 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 9999;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -571,11 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mt-3 {
@@ -883,11 +874,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -898,10 +884,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .fill-blog {
   fill: #dddddd;
-}
-
-.fill-white {
-  fill: #fff;
 }
 
 .p-2 {
@@ -961,11 +943,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
 }
@@ -982,8 +959,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 8rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .pt-24 {
@@ -996,14 +973,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1445,10 +1414,6 @@ footer {
   margin-left: 0.25rem;
 }
 
-.dark .dark\:mt-36 {
-  margin-top: 9rem;
-}
-
 .dark .dark\:border-2 {
   border-width: 2px;
 }
@@ -1473,32 +1438,6 @@ footer {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-portfolio {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 173 181 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:fill-portfolio {
-  fill: #00ADB5;
-}
-
-.dark .dark\:fill-slate-800 {
-  fill: #1e293b;
-}
-
-.dark .dark\:fill-transparent {
-  fill: transparent;
-}
-
-.dark .dark\:fill-black {
-  fill: #000;
-}
-
 .dark .dark\:fill-dark {
   fill: #0f172a;
 }
@@ -1507,36 +1446,12 @@ footer {
   padding-left: 0.25rem;
 }
 
-.dark .dark\:pt-0 {
-  padding-top: 0px;
-}
-
-.dark .dark\:pt-36 {
-  padding-top: 9rem;
-}
-
-.dark .dark\:pb-4 {
-  padding-bottom: 1rem;
-}
-
-.dark .dark\:pb-36 {
-  padding-bottom: 9rem;
-}
-
-.dark .dark\:pb-44 {
-  padding-bottom: 11rem;
-}
-
-.dark .dark\:pb-60 {
-  padding-bottom: 15rem;
-}
-
-.dark .dark\:pb-72 {
-  padding-bottom: 18rem;
-}
-
 .dark .dark\:pb-64 {
   padding-bottom: 16rem;
+}
+
+.dark .dark\:pt-0 {
+  padding-top: 0px;
 }
 
 .dark .dark\:text-white {
