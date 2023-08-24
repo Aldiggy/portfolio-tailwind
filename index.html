@@ -353,7 +353,7 @@
             <!-- <p class="text-md font-medium text-secondary md:text-lg">Fitur ini berfungsi, Silahkan di coba.</p> -->
           </div>
         </div>
-        <form name="contact-form">
+        <form name="contact-form" id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbxVXvJvAD2Lffl8pTtLmhJFKMDbNHmE7jMX_58XXX6V_GPRPWAV8kbXGLeMeK_NxT00zw/exec">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold dark:text-portfolio">Nama</label>
@@ -507,7 +507,8 @@
       });
     </script>
 
-    <script>
+    <!-- google sheet lama -->
+    <!-- <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyGvVCwHT9gjeZXfBKBQdaxPKWgAMU49V6Op00DEbd47gDvG1FLGbJ5A32AM5Y0D8AfFg/exec";
       const form = document.forms["contact-form"];
       const btnKirim = document.querySelector(".btn-kirim");
@@ -523,6 +524,24 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            swal("Terimakasih!", "Pesan anda sudah saya terima", "success");
+            form.reset();
+          });
+        });
       });
     </script>
 
