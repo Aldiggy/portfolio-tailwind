@@ -62,6 +62,16 @@ footer {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+/* .fade {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+}
+
+.active,
+.dot:hover {
+  background-color: #00adb5;
+} */
+
 @keyframes up-down {
   0% {
     transform: translateY(10px);
