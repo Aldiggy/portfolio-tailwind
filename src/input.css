@@ -63,6 +63,10 @@ footer {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.filter-portfolio {
+  filter: invert(55%) sepia(83%) saturate(1301%) hue-rotate(138deg) brightness(83%) contrast(101%);
+}
+
 @keyframes up-down {
   0% {
     transform: translateY(10px);
