@@ -907,16 +907,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
+.fill-portfolio{
+  fill: #00ADB5;
+}
+
 .fill-current{
   fill: currentColor;
 }
 
 .fill-blog{
   fill: #dddddd;
-}
-
-.fill-portfolio{
-  fill: #00ADB5;
 }
 
 .p-2{
@@ -1339,7 +1339,7 @@ footer {
   height: 2px;
   width: 30px;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .dark .hamburger-line{
@@ -1504,12 +1504,12 @@ footer {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:fill-dark{
-  fill: #0f172a;
-}
-
 .dark .dark\:fill-portfolio{
   fill: #00ADB5;
+}
+
+.dark .dark\:fill-dark{
+  fill: #0f172a;
 }
 
 .dark .dark\:text-white{
@@ -1594,14 +1594,6 @@ footer {
 }
 
 @media (min-width: 1024px){
-  .lg\:visible{
-    visibility: visible;
-  }
-
-  .lg\:invisible{
-    visibility: hidden;
-  }
-
   .lg\:static{
     position: static;
   }
@@ -1660,10 +1652,6 @@ footer {
     background-color: transparent;
   }
 
-  .lg\:fill-white{
-    fill: #fff;
-  }
-
   .lg\:pt-10{
     padding-top: 2.5rem;
   }
@@ -1688,24 +1676,9 @@ footer {
     line-height: 1.75rem;
   }
 
-  .lg\:text-slate-500{
-    --tw-text-opacity: 1;
-    color: rgb(100 116 139 / var(--tw-text-opacity));
-  }
-
-  .lg\:text-slate-700{
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85 / var(--tw-text-opacity));
-  }
-
   .lg\:text-dark{
     --tw-text-opacity: 1;
     color: rgb(15 23 42 / var(--tw-text-opacity));
-  }
-
-  .lg\:text-black{
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
   .lg\:shadow-none{
@@ -1732,14 +1705,6 @@ footer {
 @media (min-width: 1280px){
   .xl\:visible{
     visibility: visible;
-  }
-
-  .xl\:invisible{
-    visibility: hidden;
-  }
-
-  .xl\:absolute{
-    position: absolute;
   }
 
   .xl\:mx-auto{
