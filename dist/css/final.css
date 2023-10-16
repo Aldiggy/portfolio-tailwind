@@ -1436,14 +1436,14 @@ footer {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
-.hover\:text-portfolio:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 173 181 / var(--tw-text-opacity));
-}
-
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-portfolio:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 173 181 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover{
@@ -1525,19 +1525,14 @@ footer {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-slate-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-slate-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:bg-slate-700{
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-slate-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:fill-portfolio{
